@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengumuman - Kecamatan Garum</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .filter-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: 1px solid #d5ddd8;
+      background: white;
+      cursor: pointer;
+      font-weight: 600;
+      color: #1f3b31;
+    }
+
+    .filter-btn.active {
+      background: #2e7d52;
+      color: white;
+      border-color: #2e7d52;
+    }
+
+    .announcement-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .announcement-item {
+      display: flex;
+      gap: 20px;
+      background: white;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+      border: 1px solid transparent;
+    }
+
+    .announcement-item.active-border {
+      border-color: #2e7d52;
+    }
+
+    .ann-date {
+      width: 68px;
+      height: 76px;
+      border-radius: 12px;
+      background: #e8f7ef;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #0b5b3f;
+      font-weight: 700;
+    }
+
+    .ann-date strong {
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    .ann-date span {
+      font-size: 13px;
+      margin-top: 6px;
+    }
+
+    .ann-content .tag {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: #e8f7ef;
+      color: #0b5b3f;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .ann-content h3 {
+      margin: 0 0 10px;
+      color: #002b22;
+      font-size: 20px;
+    }
+
+    .ann-content p {
+      margin: 0;
+      color: #4d6358;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 700px) {
+      .announcement-item {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-badge">
+        <img src="image/logo-garum.png" alt="Logo Garum">
+      </span>
+      <span class="brand-title">
+        Kecamatan Garum <span class="brand-sub">Kabupaten Blitar</span>
+      </span>
+    </a>
+
+    <nav class="menu">
+      <a href="index.html">Beranda</a>
+      <a href="index.html#layanan">Layanan</a>
+      <a href="index.html#informasi">Informasi Publik</a>
+      <a href="berita.html">Berita</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero-page">
+    <h1>Pengumuman</h1>
+    <p>Informasi pengumuman resmi Kecamatan Garum.</p>
+  </section>
+
+  <section>
+
+    <div class="filter-bar">
+      <button class="filter-btn active">Semua</button>
+      <button class="filter-btn">Penting</button>
+      <button class="filter-btn">Kegiatan</button>
+      <button class="filter-btn">Pengadaan</button>
+      <button class="filter-btn">Sosial</button>
+    </div>
+
+    <div class="announcement-list">
+
+      <div class="announcement-item">
+        <div class="ann-date">
+          <strong>20</strong>
+          <span>JUN</span>
+        </div>
+        <div class="ann-content">
+          <span class="tag">Sosial</span>
+          <h3>Pengumuman Pembagian Zakat</h3>
+          <p>Informasi pengumuman pembagian zakat Kecamatan Garum. Masyarakat dimohon memperhatikan jadwal dan ketentuan yang berlaku.</p>
+        </div>
+      </div>
+
+      <div class="announcement-item active-border">
+        <div class="ann-date">
+          <strong>20</strong>
+          <span>JUN</span>
+        </div>
+        <div class="ann-content">
+          <span class="tag">Pengadaan</span>
+          <h3>Pengumuman Lelang 1</h3>
+          <p>Pengumuman terkait proses lelang dan informasi pengadaan di lingkungan Kecamatan Garum Kabupaten Blitar.</p>
+        </div>
+      </div>
+
+      <div class="announcement-item">
+        <div class="ann-date">
+          <strong>20</strong>
+          <span>JUN</span>
+        </div>
+        <div class="ann-content">
+          <span class="tag">Kegiatan</span>
+          <h3>Pengumuman Pemenang Lomba</h3>
+          <p>Informasi hasil lomba dan kegiatan masyarakat yang diumumkan melalui kanal resmi Kecamatan Garum.</p>
+        </div>
+      </div>
+
+      <div class="announcement-item">
+        <div class="ann-date">
+          <strong>20</strong>
+          <span>JUN</span>
+        </div>
+        <div class="ann-content">
+          <span class="tag">Penting</span>
+          <h3>Pengumuman 1</h3>
+          <p>Pengumuman resmi Kecamatan Garum untuk masyarakat. Silakan ikuti informasi terbaru melalui halaman ini.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="btn" href="index.html">Kembali ke Beranda</a>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Kecamatan Garum</h4>
+      <p>Portal lokal untuk akses informasi dan layanan masyarakat Kecamatan Garum, Kabupaten Blitar.</p>
+    </div>
+
+    <div>
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="layanan-publik.html">Layanan Publik</a></li>
+        <li><a href="pengumuman.html">Pengumuman</a></li>
+        <li><a href="ppid.html">PPID</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Kontak</h4>
+      <p>Kecamatan Garum, Kabupaten Blitar<br>Email: garum@blitarkab.go.id</p>
+    </div>
+  </div>
+
+  <div class="container copyright">
+    2026 Kecamatan Garum.
+  </div>
+</footer>
+
+<script>
+const filterButtons = document.querySelectorAll('.filter-btn');
+const announcementItems = document.querySelectorAll('.announcement-item');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    const filter = button.innerText.toLowerCase();
+
+    announcementItems.forEach(item => {
+      const text = item.innerText.toLowerCase();
+
+      if (filter === 'semua' || text.includes(filter)) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

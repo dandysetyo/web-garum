@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dokumen Pelaporan - Kecamatan Garum</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .filter-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      background: white;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .filter-btn.active {
+      background: #159b6b;
+      color: white;
+      border-color: #159b6b;
+    }
+
+    .doc-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .doc-card {
+      background: white;
+      padding: 24px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    }
+
+    .doc-icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 14px;
+      background: #f3f6f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #2e7d52;
+    }
+
+    .doc-card h3 {
+      font-size: 17px;
+      color: #002b22;
+      margin-bottom: 8px;
+    }
+
+    .doc-card p {
+      color: #789085;
+      margin-bottom: 10px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      background: #e7f4ed;
+      color: #2e7d52;
+      font-size: 13px;
+    }
+
+    @media(max-width: 900px) {
+      .doc-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-badge">
+        <img src="image/logo-garum.png" alt="Logo Garum">
+      </span>
+      <span class="brand-title">
+        Kecamatan Garum <span class="brand-sub">Kabupaten Blitar</span>
+      </span>
+    </a>
+
+    <nav class="menu">
+      <a href="index.html">Beranda</a>
+      <a href="index.html#layanan">Layanan</a>
+      <a href="index.html#informasi">Informasi Publik</a>
+      <a href="berita.html">Berita</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero-page">
+    <h1>Dokumen Pelaporan</h1>
+    <p>Dokumen publik dan laporan yang dapat diakses masyarakat.</p>
+  </section>
+
+  <section>
+
+    <div class="filter-bar">
+      <button class="filter-btn active">Semua</button>
+      <button class="filter-btn">Laporan Tahunan</button>
+      <button class="filter-btn">Laporan Keuangan</button>
+      <button class="filter-btn">Profil Kecamatan</button>
+      <button class="filter-btn">Regulasi</button>
+    </div>
+
+    <div class="doc-grid">
+
+      <div class="doc-card">
+        <div class="doc-icon"><i class="fas fa-file-alt"></i></div>
+        <h3>Laporan Tahunan 2024</h3>
+        <p>Laporan Tahunan · PDF</p>
+        <span class="badge">Tersedia</span>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-icon"><i class="fas fa-coins"></i></div>
+        <h3>Laporan Keuangan Q1 2025</h3>
+        <p>Laporan Keuangan · PDF</p>
+        <span class="badge">Tersedia</span>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-icon"><i class="fas fa-building"></i></div>
+        <h3>Profil Kecamatan Garum 2025</h3>
+        <p>Profil Kecamatan · PDF</p>
+        <span class="badge">Tersedia</span>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-icon"><i class="fas fa-file-contract"></i></div>
+        <h3>RPJM Kecamatan 2023–2027</h3>
+        <p>Regulasi · PDF</p>
+        <span class="badge">Tersedia</span>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-icon"><i class="fas fa-chart-bar"></i></div>
+        <h3>Data Statistik Kecamatan 2024</h3>
+        <p>Laporan Statistik · XLSX</p>
+        <span class="badge">Tersedia</span>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-icon"><i class="fas fa-clipboard-list"></i></div>
+        <h3>Laporan Kinerja 2024</h3>
+        <p>Laporan Kinerja · PDF</p>
+        <span class="badge">Tersedia</span>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-icon"><i class="fas fa-scale-balanced"></i></div>
+        <h3>Peraturan Camat 2025</h3>
+        <p>Regulasi · PDF</p>
+        <span class="badge">Baru</span>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-icon"><i class="fas fa-map"></i></div>
+        <h3>Peta Administrasi Kecamatan</h3>
+        <p>Peta · PDF</p>
+        <span class="badge">Tersedia</span>
+      </div>
+
+    </div>
+
+    <a class="btn" href="index.html">Kembali ke Beranda</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Kecamatan Garum</h4>
+      <p>Portal lokal untuk akses informasi dan layanan masyarakat Kecamatan Garum, Kabupaten Blitar.</p>
+    </div>
+
+    <div>
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="layanan-publik.html">Layanan Publik</a></li>
+        <li><a href="pengumuman.html">Pengumuman</a></li>
+        <li><a href="ppid.html">PPID</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Kontak</h4>
+      <p>Kecamatan Garum, Kabupaten Blitar<br>Email: garum@blitarkab.go.id</p>
+    </div>
+  </div>
+
+  <div class="container copyright">
+    2026 Kecamatan Garum.
+  </div>
+</footer>
+
+<script>
+const buttons = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.doc-card');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const text = btn.innerText.toLowerCase();
+
+    cards.forEach(card => {
+      const isi = card.innerText.toLowerCase();
+
+      if (text === 'semua' || isi.includes(text)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

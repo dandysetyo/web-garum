@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Kami - Kecamatan Garum</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .contact-card {
+      background: white;
+      border-radius: 20px;
+      padding: 35px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+    }
+
+    .contact-card h3 {
+      color: #064b35;
+      margin-bottom: 25px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 18px;
+      padding: 18px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background: #e8f7ef;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-item span {
+      display: block;
+      color: #4d6358;
+      margin-bottom: 6px;
+    }
+
+    .contact-item strong {
+      color: #001f18;
+    }
+
+    .contact-card form label {
+      display: block;
+      margin: 14px 0 6px;
+      font-weight: 600;
+    }
+
+    .contact-card input,
+    .contact-card select,
+    .contact-card textarea {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1px solid #d5ddd8;
+      border-radius: 12px;
+      font-size: 15px;
+    }
+
+    .contact-card textarea {
+      min-height: 110px;
+    }
+
+    .btn-primary {
+      width: 100%;
+      margin-top: 20px;
+      padding: 14px;
+      background: #2e7d52;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 800px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-badge">
+        <img src="image/logo-garum.png">
+      </span>
+      <span class="brand-title">
+        Kecamatan Garum 
+        <span class="brand-sub">Kabupaten Blitar</span>
+      </span>
+    </a>
+
+    <nav class="menu">
+      <a href="index.html">Beranda</a>
+      <a href="index.html#layanan">Layanan</a>
+      <a href="index.html#informasi">Informasi Publik</a>
+      <a href="berita.html">Berita</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero-page">
+    <h1>Kontak Kami</h1>
+    <p>Informasi kontak dan layanan Kecamatan Garum.</p>
+  </section>
+
+  <section>
+
+    <div class="contact-grid">
+
+      <!-- KIRI -->
+      <div class="contact-card">
+        <h3>Informasi Kontak</h3>
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <span>Alamat</span>
+            <strong>Jl. Raya Batang No. 05, Garum, Blitar, Jawa Timur 66182</strong>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <span>Telepon</span>
+            <strong>(0342) 819188</strong>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <span>Email Resmi</span>
+            <strong>garum@blitarkab.go.id</strong>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <span>Email Admin</span>
+            <strong>admin@garum.blitarkab.go.id</strong>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">⏰</div>
+          <div>
+            <span>Jam Kerja</span>
+            <strong>Senin–Jumat: 08.00–15.00 WIB</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- KANAN -->
+      <div class="contact-card">
+        <h3>Kirim Pesan</h3>
+
+        <form>
+          <label>Nama Lengkap</label>
+          <input type="text" placeholder="Nama Anda">
+
+          <label>Email</label>
+          <input type="email" placeholder="email@anda.com">
+
+          <label>No. Telepon / WhatsApp</label>
+          <input type="text" placeholder="08xx-xxxx-xxxx">
+
+          <label>Subjek</label>
+          <select>
+            <option>Pertanyaan Umum</option>
+            <option>Pengaduan Pelayanan</option>
+            <option>Permohonan Informasi</option>
+            <option>Saran & Masukan</option>
+          </select>
+
+          <label>Pesan</label>
+          <textarea placeholder="Tuliskan pesan, pertanyaan, atau pengaduan Anda..."></textarea>
+
+          <button class="btn-primary">Kirim Pesan</button>
+        </form>
+      </div>
+
+    </div>
+
+    <a class="btn" href="index.html">Kembali ke layanan</a>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Kecamatan Garum</h4>
+      <p>Portal lokal untuk akses informasi dan layanan masyarakat Kecamatan Garum.</p>
+    </div>
+
+    <div>
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="layanan-publik.html">Layanan Publik</a></li>
+        <li><a href="pengumuman.html">Pengumuman</a></li>
+        <li><a href="ppid.html">PPID</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Kontak</h4>
+      <p>Kecamatan Garum<br>Email: garum@blitarkab.go.id</p>
+    </div>
+  </div>
+
+  <div class="container copyright">
+    2026 Kecamatan Garum.
+  </div>
+</footer>
+
+</body>
+</html>

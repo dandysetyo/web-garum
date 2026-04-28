@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan Publik - Kecamatan Garum</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .layanan-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .layanan-card {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    }
+
+    .layanan-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .layanan-icon {
+      width: 48px;
+      height: 48px;
+      background: #e8f7ef;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+
+    .layanan-card h3 {
+      color: #064b35;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .layanan-card p {
+      color: #4d6358;
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+
+    .layanan-card ul {
+      padding-left: 20px;
+      color: #315047;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 900px) {
+      .layanan-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <span class="brand-badge">
+        <img src="image/logo-garum.png" alt="Logo Garum">
+      </span>
+      <span class="brand-title">
+        Kecamatan Garum <span class="brand-sub">Kabupaten Blitar</span>
+      </span>
+    </a>
+
+    <nav class="menu">
+      <a href="index.html">Beranda</a>
+      <a href="index.html#layanan">Layanan</a>
+      <a href="index.html#informasi">Informasi Publik</a>
+      <a href="berita.html">Berita</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero-page">
+    <h1>Layanan Publik</h1>
+    <p>Daftar informasi layanan administrasi dan pengaduan untuk masyarakat.</p>
+  </section>
+
+  <section>
+    <div class="layanan-grid">
+
+      <div class="layanan-card">
+        <div class="layanan-head">
+          <div class="layanan-icon">🪪</div>
+          <h3>Administrasi Kependudukan</h3>
+        </div>
+        <p>Layanan pengurusan dokumen kependudukan warga</p>
+        <ul>
+          <li>KTP (Kartu Tanda Penduduk)</li>
+          <li>KK (Kartu Keluarga)</li>
+          <li>Surat Keterangan Domisili</li>
+          <li>Surat Pindah / Datang</li>
+          <li>Akta Kelahiran & Kematian</li>
+        </ul>
+      </div>
+
+      <div class="layanan-card">
+        <div class="layanan-head">
+          <div class="layanan-icon">🏠</div>
+          <h3>Perizinan & Rekomendasi</h3>
+        </div>
+        <p>Pengurusan izin dan surat rekomendasi resmi</p>
+        <ul>
+          <li>Rekomendasi IMB</li>
+          <li>Izin Keramaian / Hajatan</li>
+          <li>Rekomendasi Usaha UMKM</li>
+          <li>Surat Keterangan Tidak Mampu</li>
+          <li>Surat Keterangan Berkelakuan Baik</li>
+        </ul>
+      </div>
+
+      <div class="layanan-card">
+        <div class="layanan-head">
+          <div class="layanan-icon">🌾</div>
+          <h3>Pertanian & Ketahanan Pangan</h3>
+        </div>
+        <p>Fasilitasi layanan sektor pertanian</p>
+        <ul>
+          <li>Surat Keterangan Tanah Pertanian</li>
+          <li>Rekomendasi Pupuk Subsidi</li>
+          <li>Kelompok Tani & Gabungan</li>
+          <li>Info Bantuan Bibit & Alsintan</li>
+        </ul>
+      </div>
+
+      <div class="layanan-card">
+        <div class="layanan-head">
+          <div class="layanan-icon">💼</div>
+          <h3>Sosial & Kesejahteraan</h3>
+        </div>
+        <p>Layanan program bantuan sosial masyarakat</p>
+        <ul>
+          <li>Pendataan Penerima Bansos</li>
+          <li>Rekomendasi BPJS PBI</li>
+          <li>PKH & BLT Desa</li>
+          <li>Kartu Indonesia Pintar (KIP)</li>
+        </ul>
+      </div>
+
+      <div class="layanan-card">
+        <div class="layanan-head">
+          <div class="layanan-icon">⚖️</div>
+          <h3>Hukum & Ketertiban</h3>
+        </div>
+        <p>Layanan mediasi dan ketertiban umum</p>
+        <ul>
+          <li>Mediasi Sengketa Warga</li>
+          <li>Surat Keterangan Waris</li>
+          <li>Laporan Gangguan Keamanan</li>
+          <li>Koordinasi Linmas & Satpol PP</li>
+        </ul>
+      </div>
+
+      <div class="layanan-card">
+        <div class="layanan-head">
+          <div class="layanan-icon">📚</div>
+          <h3>Pendidikan & Budaya</h3>
+        </div>
+        <p>Dukungan sektor pendidikan dan kebudayaan</p>
+        <ul>
+          <li>Rekomendasi Beasiswa</li>
+          <li>Surat Keterangan Siswa</li>
+          <li>Fasilitasi Kegiatan Budaya</li>
+          <li>Data Sekolah Kecamatan</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <a class="btn" href="index.html">Kembali ke Beranda</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Kecamatan Garum</h4>
+      <p>Portal lokal untuk akses informasi dan layanan masyarakat Kecamatan Garum, Kabupaten Blitar.</p>
+    </div>
+
+    <div>
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="layanan-publik.html">Layanan Publik</a></li>
+        <li><a href="pengumuman.html">Pengumuman</a></li>
+        <li><a href="ppid.html">PPID</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Kontak</h4>
+      <p>Kecamatan Garum, Kabupaten Blitar<br>Email: garum@blitarkab.go.id</p>
+    </div>
+  </div>
+
+  <div class="container copyright">2026 Kecamatan Garum.</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#a52213">
+<title>Rekapitulasi APBD Kabupaten Blitar</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<link rel="icon" type="image/png" href="https://ringkasanapbd.blitarkab.go.id/assets/themes/admin/img/logo-kabupaten-blitar.png">
+
+ <!-- Font Awesome Icons  -->
+<link rel="stylesheet" href="https://ringkasanapbd.blitarkab.go.id/assets/themes/admin/css/font-awesome.min.css">
+
+
+ <!-- Bootstrap 3.3.6  -->
+<link rel="stylesheet" href="https://ringkasanapbd.blitarkab.go.id/assets/themes/admin/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://ringkasanapbd.blitarkab.go.id/assets/themes/admin/css/bootstrap-datepicker.min.css">
+
+ <!-- normalize  -->
+<link rel="stylesheet" href="https://ringkasanapbd.blitarkab.go.id/assets/themes/front/css/normalize.css">
+
+<!-- custom  -->
+<!-- <link rel="stylesheet" href="https://ringkasanapbd.blitarkab.go.id/assets/themes/front/css/docs.css"> -->
+<link rel="stylesheet" href="https://ringkasanapbd.blitarkab.go.id/assets/themes/front/css/custom.css">
+<link rel="stylesheet" href="https://ringkasanapbd.blitarkab.go.id/assets/themes/admin/css/AdminLTE.min.css">
+<link rel="stylesheet" type="text/css" href="https://ringkasanapbd.blitarkab.go.id/assets/themes/admin/css/select2.min.css">
+
+<style type="text/css">
+.apbd-skpd-section { 
+	/*background-image: url(assets/themes/front/img/amazing.png) !important;*/
+	background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;	
+}
+.form-filter-tahun {
+    display: inline;
+    position: relative;
+    border-radius: 6px !important;
+    top: -1px;
+    /* background-color: hsl(122deg 39% 49%) !important; */
+    background-color: hsl(337.39deg 63.65% 11.95%) !important;
+    border-color: hsl(0deg 0% 94% / 64%) !important;
+    color: hsl(0deg 0% 100%) !important;
+    padding: 0px 20px 0px 11px !important;
+    width: auto !important;
+    font-size: 30px !important;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 0.7;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    padding: 0.5em;
+    padding-right: 1.5em;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") !important;
+}
+</style>
+
+ <!-- jQuery 2.2.0  -->
+<script src="https://ringkasanapbd.blitarkab.go.id/assets/themes/admin/js/jquery.min.js"></script>
+<script type='text/javascript' src="https://ringkasanapbd.blitarkab.go.id/assets/themes/front/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+
+ <!-- Bootstrap 3.3.6  -->
+<script src="https://ringkasanapbd.blitarkab.go.id/assets/themes/admin/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="table-title">
+    <div class="table-title-row">
+        <div class="col-lg-2 col-md-8 col-sm-8 header-area">
+            <img class="logo-pemkab" src="https://ringkasanapbd.blitarkab.go.id/assets/themes/admin/img/logo-kabupaten-blitar.png" alt="Pemerintah Kabupaten Blitar" width="80px">
+        </div>
+
+        <div class="col-lg-8 col-md-8 col-sm-8 header-title">
+            <h1 class="main-title text-header text-center no-padding no-margin">REKAPITULASI APBD TAHUN 
+                <select class="form-control form-filter-tahun">
+                                            <option value="2020" >2020</option>
+                                            <option value="2021" >2021</option>
+                                            <option value="2022" >2022</option>
+                                            <option value="2023" >2023</option>
+                                            <option value="2024" >2024</option>
+                                            <option value="2025" selected>2025</option>
+                                    </select>
+                <br>
+            <h1 class="sub-title text-center no-padding no-margin">KABUPATEN BLITAR</h1>
+            <H3 class="title-sm text-center">RAPBD <select class="form-control form-filter-tahun">
+                                            <option value="2020" >2020</option>
+                                            <option value="2021" >2021</option>
+                                            <option value="2022" >2022</option>
+                                            <option value="2023" >2023</option>
+                                            <option value="2024" >2024</option>
+                                            <option value="2025" selected>2025</option>
+                                    </select> - KAB. BLITAR</H3>
+        </div>
+        
+        <div class="col-lg-2 col-md-2 col-sm-2 right-decoration">
+            <img class="amazing-logo" src="https://ringkasanapbd.blitarkab.go.id/assets/themes/front/img/logo-blitar-lok.png" alt="Land of Kings" width="100px">
+        </div>
+    </div>
+</div>    <div class="col-lg-12 header-accent">
+    <div class="row" style="border-top: 10px solid #f5f5f5;">
+        <div class="col-lg-6">
+            <h4 class="text-center">Rekapitulasi APBD</h4>
+        </div>
+        <div class="col-lg-6">
+            <h4 class="text-center">Rekapitulasi APBD SKPD</h4>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+        <div style="clear:both"></div>
+        <div class="col-lg-6 apbd-section">
+            <div class="page-header no-margin">
+                            </div>
+
+            <!-- <img class="img-responsive" width="100%" src="http://placehold.it/600x400&amp;text=930x600"> -->
+            <!-- <img class="img-responsive" width="100%" style="height: 700px" src="https://ringkasanapbd.blitarkab.go.id/assets/themes/front/img/infografis.png"> -->
+                            <img class="img-responsive" style="width: calc(100% - 50px); border: 10px solid #5e1833;" src="https://ringkasanapbd.blitarkab.go.id/assets/uploads/lampiran//Infografis-WHumk.jpeg">
+                        <!-- <div id="carousel_fade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                            
+                    <div class="item active">
+                        <img class="img-responsive" width="100%" src="http://placehold.it/600x400&amp;text=600x400">
+                    </div>
+                                
+                    <div class="item ">
+                    </div>
+                                
+                </div>
+                <a class="carousel-control left btn-control " href="#carousel_fade" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                <a class="carousel-control right btn-control" href="#carousel_fade" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+            </div> -->
+
+        </div>
+        <div class="col-lg-6 apbd-skpd-section clearfix">
+            <h3 class="apbd-skpd-title text-center">Rekapitulasi APBD SKPD</h3>
+                            <div class="perangkat text-center">
+                    <div class="page-header no-margin">
+                        <h4 class="no-padding no-margin"><strong>DINAS</strong></h4>
+                    </div>
+
+                    <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/503" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS KOMUNIKASI DAN INFORMATIKA">KOMINFO</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/502" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS PERHUBUNGAN">DISHUB</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/495" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS SOSIAL">DINSOS</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/497" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS PENGENDALIAN PENDUDUK, KELUARGA BERENCANA, PEMBERDAYAAN PEREMPUAN DAN PERLINDUNGAN ANAK">DPPKBP3A</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/504" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS KOPERASI DAN USAHA MIKRO">DISKOPUM</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/505" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS PENANAMAN MODAL DAN PELAYANAN TERPADU SATU PINTU">DPMPTSP</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/500" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS KEPENDUDUKAN DAN PENCATATAN SIPIL">DISPENDUKCAPIL</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/509" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS PETERNAKAN DAN PERIKANAN">DISNAKKAN</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/496" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS TENAGA KERJA">DISNAKER</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/508" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS PERPUSTAKAAN DAN ARSIP">DIPUSTAKA</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/499" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS LINGKUNGAN HIDUP">DLH</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/492" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS PERUMAHAN DAN KAWASAN PERMUKIMAN">DISPERKIM</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/510" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS PERINDUSTRIAN DAN PERDAGANGAN">DISPERINDAG</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/501" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS PEMBERDAYAAN MASYARAKAT DAN DESA">DPMD</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/490" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS KESEHATAN">DINKES</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/498" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS PERTANIAN DAN PANGAN">DIPERTAPA</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/491" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS PEKERJAAN UMUM DAN PENATAAN RUANG">DPUPR</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/489" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS PENDIDIKAN">DISPENDIK</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/506" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS KEPEMUDAAN DAN OLAHRAGA">DISPORA</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/507" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-info" data-toggle="tooltip" title="DINAS KEBUDAYAAN DAN PARIWISTA">DISBUDPAR</a>                 </div>
+                <br>
+                            <div class="perangkat text-center">
+                    <div class="page-header no-margin">
+                        <h4 class="no-padding no-margin"><strong>BADAN</strong></h4>
+                    </div>
+
+                    <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/515" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-success" data-toggle="tooltip" title="BADAN PENDAPATAN DAERAH">BAPENDA</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/494" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-success" data-toggle="tooltip" title="BADAN PENANGGULANGAN BENCANA DAERAH">BPBD</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/516" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-success" data-toggle="tooltip" title="BADAN KEPEGAWAIAN DAN PENGEMBANGAN SUMBER DAYA MANUSIA">BKPSDM</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/493" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-success" data-toggle="tooltip" title="SATUAN POLISI PAMONG PRAJA">SATPOL PP</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/517" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-success" data-toggle="tooltip" title="INSPEKTORAT DAERAH">INSPEKTORAT</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/514" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-success" data-toggle="tooltip" title="BADAN PENGELOLA KEUANGAN DAN ASET DAERAH (SKPD)">BPKAD</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/513" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-success" data-toggle="tooltip" title="BADAN PERENCANAAN PEMBANGUNAN DAERAH">BAPPEDA</a>                 </div>
+                <br>
+                            <div class="perangkat text-center">
+                    <div class="page-header no-margin">
+                        <h4 class="no-padding no-margin"><strong>KECAMATAN</strong></h4>
+                    </div>
+
+                    <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/521" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN TALUN">KEC TALUN</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/526" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN KESAMBEN">KEC KESAMBEN</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/519" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN WLINGI">KEC WLINGI</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/523" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN KANIGORO">KEC KANIGORO</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/530" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN SANANKULON">KEC SANANKULON</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/525" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN NGLEGOK">KEC NGLEGOK</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/534" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN WATES">KEC WATES</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/536" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN DOKO">KEC DOKO</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/533" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN PANGGUNGREJO">KEC PANGGUNGREJO</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/529" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN WONODADI">KEC WONODADI</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/535" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN BINANGUN">KEC BINANGUN</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/539" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN UDANAWU">KEC UDANAWU</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/522" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN SRENGAT">KEC SRENGAT</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/518" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN SUTOJAYAN">KEC SUTOJAYAN</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/538" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN GANDUSARI">KEC GANDUSARI</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/531" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN BAKUNG">KEC BAKUNG</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/527" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN SELOREJO">KEC SELOREJO</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/528" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN PONGGOK">KEC PONGGOK</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/524" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN KADEMANGAN">KEC KADEMANGAN</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/537" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN SELOPURO">KEC SELOPURO</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/532" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN WONOTIRTO">KEC WONOTIRTO</a> <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/520" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-danger" data-toggle="tooltip" title="KECAMATAN GARUM">KEC GARUM</a>                 </div>
+                <br>
+                            <div class="perangkat text-center">
+                    <div class="page-header no-margin">
+                        <h4 class="no-padding no-margin"><strong>SEKRETARIAT DAERAH</strong></h4>
+                    </div>
+
+                    <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/511" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-primary" data-toggle="tooltip" title="SEKRETARIAT DAERAH">SEKRETARIAT DAERAH</a>                 </div>
+                <br>
+                            <div class="perangkat text-center">
+                    <div class="page-header no-margin">
+                        <h4 class="no-padding no-margin"><strong>SEKRETARIAT DPRD</strong></h4>
+                    </div>
+
+                    <a href="https://ringkasanapbd.blitarkab.go.id/front/detail-lampiran-apbd-skpd/512" modal-size="modal-lg" modal-title="Detail Lampiran" class="btn modal-view btn-list-skpd btn-detail-apbd-skpd btn-green" data-toggle="tooltip" title="SEKRETARIAT DPRD">SEKWAN</a>                 </div>
+                <br>
+                    </div>
+</div>    <footer>
+    <div class="col-lg-2 col-md-2 col-sm-12 footer-left text-center">
+        <img class="img-responsive text-center margin-auto" style="width: 130px; /* filter: hue-rotate(115deg) */" src="https://ringkasanapbd.blitarkab.go.id/assets/themes/front/img/ayo-bela-beli.png">
+    </div>
+
+    
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 footer-icon">
+            <a href="http://blitarkab.go.id" target="_blank"><i class="fa fa-globe"></i> www.blitarkab.go.id</a>
+        </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 footer-icon">
+            <a href="https://www.facebook.com/pemkabblitar/" target="_blank"><i class="fa fa-facebook"></i> Pemkab Blitar</a>
+        </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 footer-icon">
+            <a href="https://twitter.com/pemkab_blitar/" target="_blank"><i class="fa fa-twitter"></i> Pemkab Blitar</a>
+        </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-4 footer-icon">
+            <a href="https://www.instagram.com/pemkab_blitar/" target="_blank"><i class="fa fa-instagram"></i> pemkab_blitar</a>
+        </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-4 footer-icon">
+            <a href="https://www.youtube.com/channel/UC048xfW6keBDnogln9P7CZg" target="_blank"><i class="fa fa-youtube"></i> Pemda Kab Blitar</a>
+        </div>
+        <div class="clear-both"></div>
+</footer>
+<div class="modal fade" id="main-modal" role="dialog" tabindex="-1" aria-labelledby="modal-box" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<!--Modal header-->
+			<div class="modal-header">
+				<button data-dismiss="modal" class="close" data-toggle="tooltip" title="close" type="button">
+				<span aria-hidden="true"><i class="fa fa-close"></i></span>
+				</button>
+				<h4 class="modal-title"></h4>
+			</div>
+
+			<!--Modal body-->
+			<div class="modal-body">
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script>
+    //launch modal 
+    $(document).on('click','.modal-view', function(e) {
+            e.preventDefault();
+            $('#loading').show();
+            var modal = $('#main-modal');
+            if (typeof $(this).attr('modal-size') !== 'undefined') {
+                // set modal type (xs, md, lg)
+                modal.find('.modal-dialog').attr('class', 'modal-dialog '+$(this).attr('modal-size'));
+            } else {
+                // set to default (md)
+                modal.find('.modal-dialog').attr('class', 'modal-dialog modal-md');
+            }
+            modal.find('.modal-body').load(this.href, function(){
+                $('#loading').hide();
+                modal.modal('show');
+            });
+            modal.find('.modal-title').html($(this).attr('modal-title'));
+        });
+
+    //clean modal on close 
+    $('#main-modal').on('hidden.bs.modal', function (e){
+      $(this).children('div').attr('class','modal-dialog');
+      $(this).find('.modal-body').html('');
+    });
+</script>
+</body>
+
+<script>
+    $(function() {
+        var base_url = 'https://ringkasanapbd.blitarkab.go.id/'
+        $(document).on('change', '.form-filter-tahun', function() {
+            var tahun = $(this).find(':selected').val()
+            location.href = base_url+tahun
+        })
+    })
+</script>
+
+</html>                                                                 
